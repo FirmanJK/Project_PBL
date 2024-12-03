@@ -17,7 +17,17 @@
       padding: 50px 40px 40px 40px;
       border-radius: 15px;
       margin-top: 100px; 
-}
+    }
+    .kelompok4 {
+      position: fixed;  /* Menggunakan fixed agar selalu berada di bawah halaman */
+      bottom: 0;
+      left: 0;
+      width: 100%;  /* Agar elemen mencakup seluruh lebar halaman */
+      text-align: center;
+      padding: 10px 0; /* Jarak di atas dan bawah teks */
+      z-index: 10;
+      margin-left: 180px;
+    }
 
   </style>
 </head>
@@ -32,7 +42,7 @@
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
           <a href="./dashboard.php" class="text-nowrap logo-img">
-            <img src="../../../assets/images/logos/jti-polinema.png" width="180" alt="" />
+            <img src="../../../assets/images/logos/jti-polinema.png" width="220" alt="" />
           </a>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
             <i class="ti ti-x fs-8"></i>
@@ -109,7 +119,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-icon-hover" href="javascript:void(0)">
+              <a class="nav-link nav-icon-hover" href="./notifikasi.php">
                 <i class="ti ti-bell-ringing"></i>
                 <div class="notification bg-primary rounded-circle"></div>
               </a>
@@ -126,18 +136,14 @@
                 </a>
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
                   <div class="message-body">
+                    <a href="./data-mahasiswa.php" class="d-flex align-items-center gap-2 dropdown-item">
+                      <i class="ti ti-school fs-6"></i>
+                      <p class="mb-0 fs-3">Data Mahasiswa</p>
+                    </a>
                     <a href="./profile.php" class="d-flex align-items-center gap-2 dropdown-item">
                       <i class="ti ti-user fs-6"></i>
                       <p class="mb-0 fs-3">My Profile</p>
-                    </a>
-                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
-                      <i class="ti ti-mail fs-6"></i>
-                      <p class="mb-0 fs-3">My Account</p>
-                    </a>
-                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
-                      <i class="ti ti-list-check fs-6"></i>
-                      <p class="mb-0 fs-3">My Task</p>
-                    </a>
+                    </a>                  
                     <button id="logoutButton" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</button>
                   </div>
                 </div>
@@ -160,6 +166,7 @@
                 portal ini. Layanan ini hanya bisa diakses oleh satu mahasiswa per judul karya akhir, dengan akun yang
                 terdaftar atas nama penulis utama. Untuk mulai menggunakan layanan ini, silakan klik "Lanjut." </p>
             </div>
+            <p class="kelompok4">Bebas Tanggungan Apps | Design and Dev by Kelompok 4</p>
           </div>
         </div>
       </div>

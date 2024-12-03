@@ -14,6 +14,151 @@
         border-bottom: 1px solid #ddd; /* Warna dan ketebalan garis */
         margin-bottom: 15px; /* Jarak antara header dan konten berikutnya */
         }
+        body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #ffff;
+    }
+    .app-header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1000; 
+        background-color: #fff; 
+    }
+    .body-wrapper {
+        margin-top: 100px; 
+    }
+    .container {
+        width: 80%;
+        margin: 10px auto;
+        background: #fff;
+        padding-left: 60px;
+        padding-right: 60px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-radius: 8px;
+    }
+
+    .header {
+        display: flex;
+        justify-content: space-between; /* Memisahkan elemen kiri dan kanan */
+        align-items: center; /* Menjaga elemen tetap sejajar secara vertikal */
+        margin-bottom: 10px;
+    }
+
+    .header-left {
+        display: flex;
+        flex-direction: column; /* Membuat judul dan teks status dalam kolom */
+    }
+
+    .header-left h2 {
+        margin: 0;
+    }
+
+    .header h2 {
+        margin: 0;
+    }
+
+    .btn-add {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .btn-add:hover {
+        background-color: #0056b3;
+    }
+
+    .search-bar {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .search-bar input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .btn-action {
+        border: none;
+        cursor: pointer;
+        padding: 5px;
+        margin: 0 2px;
+        border-radius: 3px;
+    }
+
+    .btn-edit {
+        background-color: #007bff;
+        color: #fff;
+    }
+
+    .btn-edit:hover {
+        background-color: #0056b3;
+    }
+
+    .btn-delete {
+        background-color: #dc3545;
+        color: #fff;
+    }
+
+    .btn-delete:hover {
+        background-color: #a71d2a;
+    }
+
+    .pagination {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 10px;
+    }
+
+    .pagination button {
+        color: #007bff;
+        padding: 10px;
+        border: 1px solid #ddd;
+        background-color: #fff;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+    .pagination button:hover {
+        background-color: #f4f4f4;
+    }
+
+    .page-numbers {
+        display: flex;
+    }
+
+    .page-numbers button {
+        margin: 0 5px;
+    }
+    .notification-status {
+        margin-top: 5px; /* Jarak kecil antara judul dan teks status */
+        font-size: 14px;
+        color: #555;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px; /* Tambahkan jarak antara search bar dan tabel */
+    }
+    table tr {
+        border-bottom: 1px solid #ddd;
+    }
+    table td {
+        padding: 15px;
+    }
+    table td:last-child {
+        text-align: center;
+    }
     </style>
 <body>
   <!--  Body Wrapper -->
@@ -102,7 +247,7 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-icon-hover" href="javascript:void(0)">
+              <a class="nav-link nav-icon-hover" href="./notifikasi.php">
                 <i class="ti ti-bell-ringing"></i>
                 <div class="notification bg-primary rounded-circle"></div>
               </a>
@@ -119,18 +264,14 @@
                 </a>
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
                   <div class="message-body">
-                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                    <a href="./data-mahasiswa.php" class="d-flex align-items-center gap-2 dropdown-item">
+                      <i class="ti ti-school fs-6"></i>
+                      <p class="mb-0 fs-3">Data Mahasiswa</p>
+                    </a>
+                    <a href="./profile.php" class="d-flex align-items-center gap-2 dropdown-item">
                       <i class="ti ti-user fs-6"></i>
                       <p class="mb-0 fs-3">My Profile</p>
-                    </a>
-                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
-                      <i class="ti ti-mail fs-6"></i>
-                      <p class="mb-0 fs-3">My Account</p>
-                    </a>
-                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
-                      <i class="ti ti-list-check fs-6"></i>
-                      <p class="mb-0 fs-3">My Task</p>
-                    </a>
+                    </a>                  
                     <button id="logoutButton" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</button>
                   </div>
                 </div>
@@ -142,7 +283,61 @@
       <!--  Header End -->
 
       <!--  Main Content Start -->
-      
+      <div class="container">
+          <div class="header">
+            <div class="header-left">
+              <h2>Notifikasi</h2>
+              <p class="notification-status">3 notifikasi belum dibaca</p>
+            </div>
+              <button class="btn-add"><i class="ti ti-bell-ringing fs-4"></i>Tandai sudah dibaca</button>
+          </div>
+          <div class="search-bar">
+              <input type="text" placeholder="Pencarian...">
+          </div>
+          <table>
+                <tbody>
+                    <!-- Repeat for each row -->
+                    <tr style="border-bottom: 1px solid #ddd; padding: 15px;">
+                      <td style="padding: 15px;">Mahasiswa Mengajukan Verifikasi<br>Gunawan Tos Santos - 234198765 telah mengajukan verifikasi Tugas Akhir</td>
+                      <td style="padding: 15px; text-align: right;">09:45 23/11/2024</td>
+                      <td style="padding: 15px; text-align: center;">
+                        <button class="btn-action btn-delete">
+                          <i class="ti ti-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #ddd; padding: 15px;">
+                      <td style="padding: 15px;">Mahasiswa Mengajukan Verifikasi<br>Gunawan Tos Santos - 234198765 telah mengajukan verifikasi Tugas Akhir</td>
+                      <td style="padding: 15px; text-align: right;">09:45 23/11/2024</td>
+                      <td style="padding: 15px; text-align: center;">
+                        <button class="btn-action btn-delete">
+                          <i class="ti ti-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid #ddd; padding: 15px;">
+                      <td style="padding: 15px;">Mahasiswa Mengajukan Verifikasi<br>Gunawan Tos Santos - 234198765 telah mengajukan verifikasi Tugas Akhir</td>
+                      <td style="padding: 15px; text-align: right;">09:45 23/11/2024</td>
+                      <td style="padding: 15px; text-align: center;">
+                        <button class="btn-action btn-delete">
+                          <i class="ti ti-trash"></i>
+                        </button>
+                      </td>
+                    </tr>
+                    <!-- Example row repetition -->
+                    <!-- Copy above block for rows -->
+                </tbody>
+            </table>
+          <div class="pagination">
+              <button>Previous</button>
+              <div class="page-numbers">
+                  <button>1</button>
+                  <button>2</button>
+                  <button>3</button>
+              </div>
+              <button>Next</button>
+          </div>
+      </div>
       <!--  Main Content End -->
     </div>
   </div>
