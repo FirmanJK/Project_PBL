@@ -5,26 +5,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bebas Tanggungan</title>
-  <link rel="shortcut icon" type="image/png" href="../../../assets/images/logos/logo-jti.png" />
+  <link rel="shortcut icon" type="image/png" href="../../../assets/images/logos/icon-logo.png" />
   <link rel="stylesheet" href="../../../assets/css/styles.min.css" />
 </head>
-  <style>
-    header.app-header {
-      border-bottom: 1px solid #ddd; /* Warna dan ketebalan garis */
-      margin-bottom: 15px; /* Jarak antara header dan konten berikutnya */
-    }
-
-    h2 {
-      margin-bottom: 10px;
-    }
-
-    .pagination{
-      justify-content: right;
-      align-items: right;
-      margin-right: 70px;
-    }
-
-  </style>
 
 <body>
   <!--  Body Wrapper -->
@@ -34,9 +17,9 @@
     <aside class="left-sidebar">
       <!-- Sidebar scroll-->
       <div>
-        <div class="brand-logo d-flex align-items-center justify-content-between">
-          <a href="./dashboard.php" class="text-nowrap logo-img">
-            <img class="logo"  src="../../../assets/images/logos/jti-polinema.png" width="220" alt="" />
+      <div class="brand-logo d-flex justify-content-center align-items-center">
+          <a href="./index.html" class="text-nowrap logo-img">
+            <img src="../../../assets/images/logos/sibeta2.png" width="150"  alt="" />
           </a>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
             <i class="ti ti-x fs-8"></i>
@@ -123,7 +106,7 @@
                   aria-expanded="false">
                   <img src="../../../assets/images/profile/Farrel-Caesarian.jpg" alt="" width="35" height="35"
                     class="rounded-circle" />
-                    <p class="mb-0 ms-2 fs-5">Muhammad Farrel Caesarian</p>
+                    <p class="mb-0 ms-2 fs-5">2341720053 / Muhammad Farrel Caesarian</p>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
                   <div class="message-body">
@@ -133,9 +116,9 @@
                     </a>
                     <a href="./profile.php" class="d-flex align-items-center gap-2 dropdown-item">
                       <i class="ti ti-user fs-6"></i>
-                      <p class="mb-0 fs-3">My Profile</p>
+                      <p class="mb-0 fs-3">Profil</p>
                     </a>                  
-                    <button id="logoutButton" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</button>
+                    <button id="logoutButton" class="btn btn-outline-primary mx-3 mt-2 d-block">Keluar</button>
                   </div>
                 </div>
               </li>
@@ -150,7 +133,7 @@
           <div class="col-12">
             <!-- Wrapper untuk heading dan search -->
             <div class="d-flex flex-column align-items-center mb-4">
-              <h2>Arsip Dokumen Jurusan Teknologi Informasi</h2>
+              <h2>Arsip Dokumen JTI</h2>
               <div class="input-group mt-2" style="max-width: 400px;">
                 <input type="text" class="form-control" placeholder="Cari Nama Penyusun" aria-label="Cari Nama Penyusun" />
                 <button class="btn btn-outline-secondary" type="button">

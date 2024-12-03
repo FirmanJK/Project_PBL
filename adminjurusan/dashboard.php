@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,31 +7,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bebas Tanggungan</title>
-  <link rel="shortcut icon" type="image/png" href="../../../assets/images/logos/logo-jti.png" />
+  <link rel="shortcut icon" type="image/png" href="../../../assets/images/logos/icon-logo.png" />
   <link rel="stylesheet" href="../../../assets/css/styles.min.css" />
-  <style>
-    header.app-header {
-      border-bottom: 1px solid #ddd; /* Warna dan ketebalan garis */
-      margin-bottom: 15px; /* Jarak antara header dan konten berikutnya */
-    }
-    .deskripsi {
-      background-color: #ECF4FF;
-      padding: 50px 40px 40px 40px;
-      border-radius: 15px;
-      margin-top: 100px; 
-    }
-    .kelompok4 {
-      position: fixed;  /* Menggunakan fixed agar selalu berada di bawah halaman */
-      bottom: 0;
-      left: 0;
-      width: 100%;  /* Agar elemen mencakup seluruh lebar halaman */
-      text-align: center;
-      padding: 10px 0; /* Jarak di atas dan bawah teks */
-      z-index: 10;
-      margin-left: 180px;
-    }
-
-  </style>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -40,9 +20,9 @@
     <aside class="left-sidebar">
       <!-- Sidebar scroll-->
       <div>
-        <div class="brand-logo d-flex align-items-center justify-content-between">
-          <a href="./dashboard.php" class="text-nowrap logo-img">
-            <img src="../../../assets/images/logos/jti-polinema.png" width="220" alt="" />
+        <div class="brand-logo d-flex justify-content-center align-items-center">
+          <a href="./index.html" class="text-nowrap logo-img">
+            <img src="../../../assets/images/logos/sibeta2.png" width="150"  alt="" />
           </a>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
             <i class="ti ti-x fs-8"></i>
@@ -105,9 +85,6 @@
       </div>
       <!-- End Sidebar scroll-->
     </aside>
-    <!--  Sidebar End -->
-
-    <!--  Main Wrapper (Content Section) -->
     <div class="body-wrapper">
       <!--  Header Start -->
       <header class="app-header">
@@ -132,7 +109,7 @@
                   aria-expanded="false">
                   <img src="../../../assets/images/profile/Farrel-Caesarian.jpg" alt="" width="35" height="35"
                     class="rounded-circle" />
-                    <p class="mb-0 ms-2 fs-5">Muhammad Farrel Caesarian</p>
+                    <p class="mb-0 ms-2 fs-5">2341720053 / Muhammad Farrel Caesarian</p>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
                   <div class="message-body">
@@ -142,38 +119,102 @@
                     </a>
                     <a href="./profile.php" class="d-flex align-items-center gap-2 dropdown-item">
                       <i class="ti ti-user fs-6"></i>
-                      <p class="mb-0 fs-3">My Profile</p>
+                      <p class="mb-0 fs-3">Profil</p>
                     </a>                  
-                    <button id="logoutButton" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</button>
+                    <button id="logoutButton" class="btn btn-outline-primary mx-3 mt-2 d-block">Keluar</button>
                   </div>
                 </div>
               </li>
             </ul>
           </div>
         </nav>
+        <!-- End Sidebar navigation -->
+      </div>
+      <!-- End Sidebar scroll-->
+    </aside>
+    <!--  Sidebar End -->
+    <!--  Main wrapper -->
+    <div class="body-wrapper">
+      <!--  Header Start -->
+      <header class="app-header">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <ul class="navbar-nav">
+            <li class="nav-item d-block d-xl-none">
+              <a class="nav-link sidebartoggler nav-icon-hover" id="headerCollapse" href="javascript:void(0)">
+                <i class="ti ti-menu-2"></i>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-icon-hover" href="./notifikasi.php">
+                <i class="ti ti-bell-ringing"></i>
+                <div class="notification bg-primary rounded-circle"></div>
+              </a>
+            </li>
+          </ul>
+          <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
+            <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <img src="../../../assets/images/profile/user-1.jpg" alt="" width="40" height="40"
+                    class="rounded-circle" />
+                </a>
+                <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
+                  <div class="message-body">
+                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                      <i class="ti ti-user fs-6"></i>
+                      <p class="mb-0 fs-3">My Profile</p>
+                    </a>
+                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                      <i class="ti ti-mail fs-6"></i>
+                      <p class="mb-0 fs-3">My Account</p>
+                    </a>
+                    <a href="javascript:void(0)" class="d-flex align-items-center gap-2 dropdown-item">
+                      <i class="ti ti-list-check fs-6"></i>
+                      <p class="mb-0 fs-3">My Task</p>
+                    </a>
+                    <button id="logoutButton" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</button>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+              </li>
+            </ul>
+          </div>
+        </nav>
       </header>
       <!--  Header End -->
-
-      <!--  Main Content Start -->
-      <div class="container">
+      <div class="container-fluid">
+        <!--  Row 1 -->
         <div class="row">
-          <div class="col-lg-9 col-md-8 col-12 offset-lg-2 offset-md-2">
-            <div class="deskripsi">  
-              <h2>Selamat datang di Portal Bebas Tanggungan JTI Polinema</h2>
-              <p>Portal Bebas Tanggungan Jurusan Teknologi Informasi Politeknik Negeri Malang</p><hr>
-              <p>Digunakan sebagai portal repositori karya akhir berbentuk produk (seperti aplikasi) dan dokumen lengkap,
-                karya akhir ini nantinya dapat diterbitkan melalui layanan hosting dan repositori yang terhubung dengan
-                portal ini. Layanan ini hanya bisa diakses oleh satu mahasiswa per judul karya akhir, dengan akun yang
-                terdaftar atas nama penulis utama. Untuk mulai menggunakan layanan ini, silakan klik "Lanjut." </p>
+          <div class="col d-flex align-items-stretch">
+            <div class="card w-100">
+              <div class="card-body p-4">
+                <h5 class="card-title fw-semibold mb-4">Selamat datang di Portal Bebas Tanggungan JTI Polinema</h5>
+                <h6 class="card-subtitle mb-2 text-muted"">Portal Bebas Tanggungan Jurusan Teknologi Informasi Politeknik
+                  Negeri Malang</h6>
+                <hr>
+                <p class=" card-text">Digunakan sebagai portal repositori karya akhir berbentuk produk (seperti
+                  aplikasi)
+                  dan dokumen lengkap, karya akhir ini nantinya dapat diterbitkan melalui layanan hosting dan repositori
+                  yang terhubung dengan portal ini. Layanan ini hanya bisa diakses oleh satu mahasiswa per judul karya
+                  akhir, dengan akun yang terdaftar atas nama penulis utama. Untuk mulai
+                  menggunakan layanan ini, silakan klik "Lanjut." </p>
+                  <a href="./arsip-tugasAkhir.php" class="btn btn-primary">Lanjut</a>
+              </div>
             </div>
-            <p class="kelompok4">Bebas Tanggungan Apps | Design and Dev by Kelompok 4</p>
           </div>
+        </div><br><br><br><br><br><br><br><br>
+        <div class="py-6 px-6 text-center">
+          <p class="mb-0 fs-4">
+            <span class="pe-1 text-primary text-decoration-underline">Bebas Tanggungan TA</span>
+            | Design and Developed by
+            <span class="pe-1 text-primary text-decoration-underline">Kelompok 4</span>
+          </p>
         </div>
       </div>
-      <!--  Main Content End -->
     </div>
   </div>
-
   <script src="../../../assets/libs/jquery/dist/jquery.min.js"></script>
   <script src="../../../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../../../assets/js/sidebarmenu.js"></script>
@@ -181,6 +222,26 @@
   <script src="../../../assets/libs/apexcharts/dist/apexcharts.min.js"></script>
   <script src="../../../assets/libs/simplebar/dist/simplebar.js"></script>
   <script src="../../../assets/js/dashboard.js"></script>
+  <script>
+    document.getElementById('logoutButton').addEventListener('click', function () {
+      // Tampilkan konfirmasi SweetAlert2
+      Swal.fire({
+        title: 'Yakin ingin logout?',
+        text: "Anda akan keluar dari sesi ini.",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Ya, logout!',
+        cancelButtonText: 'Batal'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          // Arahkan ke logout.php jika pengguna memilih "Ya"
+          window.location.href = '../../auth/logout.php';
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
