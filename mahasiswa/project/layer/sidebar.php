@@ -13,8 +13,8 @@
   </style>
 </head>
 
-<body>
-  <aside class="left-sidebar">
+<!-- <body> -->
+  <aside class="left-sidebar absolute">
     <!-- Sidebar scroll-->
     <div>
       <div class="brand-logo d-flex align-items-center justify-content-between">
@@ -83,7 +83,7 @@
             </a>
           </li>
           <li class="sidebar-item">
-            <a class="sidebar-link" href="#" aria-expanded="false">
+            <a class="sidebar-link" href="../pages/status-verifikasi.php" aria-expanded="false">
               <span>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                   stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -114,6 +114,6 @@
   <script src="../assets/js/sidebarmenu.js"></script>
   <script src="../assets/js/app.min.js"></script>
   <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
-</body>
+<!-- </body> -->
 
 </html>

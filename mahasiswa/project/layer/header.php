@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 
 <body>
@@ -17,7 +18,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-icon-hover" href="javascript:void(0)">
+          <a class="nav-link nav-icon-hover" href="../pages/notifikasi.php">
             <i class="ti ti-bell-ringing"></i>
             <div class="notification bg-primary rounded-circle"></div>
           </a>
