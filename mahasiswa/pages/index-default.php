@@ -39,7 +39,7 @@
                   yang terhubung dengan portal ini. Layanan ini hanya bisa diakses oleh satu mahasiswa per judul karya
                   akhir, dengan akun yang terdaftar atas nama penulis utama. Untuk mulai
                   menggunakan layanan ini, silakan klik "Lanjut." </p>
-                  <a href="#" class="btn btn-primary">Lanjut</a>
+                  <a href="./status-verifikasi.php" class="btn btn-primary">Lanjut</a>
               </div>
             </div>
           </div>
