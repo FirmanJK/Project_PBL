@@ -7,39 +7,6 @@
   <title>Bebas Tanggungan TA</title>
   <link rel="shortcut icon" type="image/png" href="../../assets/images/logos/favicon.png" />
   <link rel="stylesheet" href="../../assets/css/styles.min.css" />
-  <style>
-    .form-sub-label {
-      font-size: 14px;
-      color: gray;
-    }
-
-    .card-title {
-      font-weight: bold;
-    }
-
-    .card-sub-title {
-      font-weight: normal;
-      color: red;
-    }
-
-    .btn-success {
-      margin-right: 10px;
-    }
-
-    .form-check-label {
-      font-size: 14px;
-      color: gray;
-    }
-
-    .text-danger {
-      color: red !important;
-    }
-
-    .sidebar .sidebar-item.active .sidebar-link {
-      background-color: #e7f3ff;
-      font-weight: bold;
-    }
-  </style>
 </head>
 
 <body>
@@ -58,21 +25,21 @@
         <div class="container-fluid">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title fw-semibold mb-4">Unggah Dokumen Syarat Kelulusan Kampus Polinema</h5>
-              <h6 class="card-sub-title fw-regular mb-4" style="color: red; font-size: small;">Pastikan dokumen yang
+              <h5 class="card-title fw-bold mb-1">Unggah Dokumen Syarat Kelulusan Kampus Polinema</h5>
+              <h6 class="card-sub-title fw-regular mb-1  text-danger">Pastikan dokumen yang
                 unggah telah sesuai</h6>
-              <hr>
+              <hr class="mb-4">
               <form>
                 <div class="mb-3">
                   <label for="fileSKLA" class="form-label">Surat Keterangan Lunas Administrasi (SKLA)</label> <br>
-                  <label for="fileSKLA" class="form-sub-label" style="margin-bottom: 2%;">Surat bukti bahwa telah
+                  <label for="fileSKLA" class="form-sub-label  text-muted" style="margin-bottom: 2%;">Surat bukti bahwa telah
                     membayar biaya administrasi secara lunas <br>(format .pdf, maksimal 2MB)</label>
                   <input type="file" class="form-control" id="fileSKLA">
                 </div>
                 <div class="mb-3">
                   <label for="fileBebasPustaka" class="form-label">Surat Keterangan Bebas Pustaka dari Perpustakaan
                     Pusat</label><br>
-                  <label for="fileSKLA" class="form-sub-label" style="margin-bottom: 2%;">Surat bukti bahwa tidak
+                  <label for="fileSKLA" class="form-sub-label mb-3">Surat bukti bahwa tidak
                     memiliki tanggungandari Perpustakaan Pusat Polinema<br>(format .pdf, maksimal 2MB)</label>
                   <input type="file" class="form-control" id="fileBebasPustaka">
                 </div>
@@ -80,8 +47,8 @@
                   <label for="fileSimfoni" class="form-label">Bukti Mengisi Data Alumni (SIMFONI POLINEMA)</label><br>
                   <label for="fileSKLA" class="form-sub-label" style="margin-bottom: 2%;">(format .png/.jpg/.jpeg,
                     maksimal 2MB)</label>
-                  <input type="file" class="form-control" id="fileSimfoni">
-                </div>
+                  <input type="file" class="form-control" id="fileSimfoni"> 
+                </div> 
                 <br>
                 <div class="mb-3 form-check">
                   <input type="checkbox" class="form-check-input" id="cekUlang">
@@ -94,9 +61,8 @@
                     dirubah</label>
                 </div>
                 <button type="submit" class="btn btn-success">Simpan</button>
-                <button type="reset" class="btn btn-danger">Batal</button>
+                <button type="reset" class="btn btn-danger ms-3">Batal</button>
               </form>
-
             </div>
           </div>
         </div>

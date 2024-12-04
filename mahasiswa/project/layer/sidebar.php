@@ -4,22 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <style>
-    .sidebar .sidebar-item.active .sidebar-link {
-      background-color: #e7f3ff;
-      font-weight: bold;
-    }
-  </style>
 </head>
 
 <!-- <body> -->
   <aside class="left-sidebar absolute">
     <!-- Sidebar scroll-->
     <div>
-      <div class="brand-logo d-flex align-items-center justify-content-between">
-        <a href="./index.html" class="text-nowrap logo-img">
-          <img src="../../assets/images/logos/dark-logo.svg" width="180" alt="" />
+      <div class="brand-logo d-flex align-items-center justify-content-center">
+        <a href="./index.html" class="text-nowrap">
+          <img src="../../assets/images/logos/sibeta2.png" width="150" alt="" />
         </a>
         <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
           <i class="ti ti-x fs-8"></i>

@@ -7,118 +7,6 @@
   <title>Status Verifikasi</title>
   <link rel="shortcut icon" type="image/png" href="../../assets/images/logos/favicon.png" />
   <link rel="stylesheet" href="../../assets/css/styles.min.css" />
-  <style>
-    body {
-      background-color: #ffffff;
-      margin: 0;
-      padding: 0;
-      min-height: 100vh;
-      /* Menjamin body minimal setinggi viewport */
-      display: flex;
-      /* Menggunakan Flexbox */
-      flex-direction: column;
-      justify-content: space-between;
-      /* Mengatur elemen menjadi kolom */
-    }
-
-    .container-fluid {
-      /* flex: 1; */
-      
-      height: 100%;
-      /* Mengisi ruang yang tersisa */
-    }
-
-    .card {
-      padding: 20px;
-    }
-
-    .table-wrapper {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .header-wrapper {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 15px;
-    }
-
-    .body-wrapper {
-      min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-    }
-
-    .header-wrapper h2 {
-      margin: 0;
-      font-size: 20px;
-      font-weight: bold;
-      color: #333;
-    }
-
-    .search-bar input {
-      padding: 8px 12px;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      font-size: 14px;
-      width: 250px;
-    }
-
-    table {
-      width: 100%;
-      border-collapse: collapse;
-      background-color: #fff;
-      border-radius: 20px;
-      /* Membulatkan sudut */
-      overflow: hidden;
-      /* Menyembunyikan elemen di luar radius */
-      border: 1px solid black;
-      /* Garis luar tabel */
-    }
-
-    table th,
-    table td {
-      text-align: left;
-      padding: 12px;
-      border-bottom: 1px solid #ddd;
-    }
-
-    table th {
-      background-color: #f9f9fc;
-      font-weight: bold;
-    }
-
-    table tr:hover {
-      background-color: #f5f5f5;
-    }
-
-    .pagination {
-      display: flex;
-      justify-content: center;
-      margin-top: 20px;
-    }
-
-    .pagination a {
-      text-decoration: none;
-      padding: 8px 12px;
-      border: 1px solid #ddd;
-      color: #007bff;
-      border-radius: 5px;
-      margin: 0 5px;
-      font-size: 14px;
-    }
-
-    .pagination a:hover {
-      background-color: #007bff;
-      color: white;
-    }
-
-    .footer {
-      /* align-items: flex-end; */
-    }
-  </style>
 </head>
 
 <body class="h-100">
@@ -127,64 +15,67 @@
     <!-- Sidebar Start -->
     <?php include '../layer/sidebar.php'; ?>
     <!-- Sidebar End -->
-    <div class="body-wrapper h-100">
+    <div class="body-wrapper min-vh-100 d-flex flex-column justify-content-between">
       <!-- Header Start -->
       <?php include '../layer/header.php'; ?>
       <!-- Header End -->
       <!-- Main Content Start -->
       <div class="container-fluid h-75">
-        <div class="card">
-          <div class="table-wrapper">
-            <div class="header-wrapper">
-              <h2>Status Verifikasi Dokumen</h2>
-              <div class="search-bar">
-                <input type="text" placeholder="Search..." />
+        <div class="card p-4">
+          <div class="table-wrapper d-flex flex-column">
+            <div class="header-wrapper d-flex justify-content-between align-items-center mb-2">
+              <h4 class="fw-bold">Status Verifikasi Dokumen</h4>
+              <div class="input-group mb-3" style="width: 30%">
+                <input type="text" class="form-control" placeholder="Search" aria-label="Search"
+                  aria-describedby="basic-addon1">
               </div>
             </div>
-            <table>
+            <table class="table justify-content-center">
               <thead>
                 <tr>
-                  <th>No</th>
-                  <th>Jenis Pengajuan</th>
-                  <th>Keterangan</th>
-                  <th>Status</th>
+                  <th scope="col">No</th>
+                  <th scope="col">Jenis Pengajuan</th>
+                  <th scope="col">Keterangan</th>
+                  <th scope="col">Status</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td>1</td>
+                  <th scope="row">1</th>
                   <td>Pengajuan Dokumen Syarat Kelulusan Kampus Polinema</td>
                   <td>Dokumen telah diverifikasi, silahkan hubungi Admin</td>
-                  <td style="color: green;">Terverifikasi</td>
+                  <td class="text-success">Terverifikasi</td>
                 </tr>
                 <tr>
                   <td>2</td>
                   <td>Pengajuan Dokumen Syarat Kelulusan JTI</td>
                   <td>Dokumen belum diverifikasi</td>
-                  <td style="color: orange;">Belum Terverifikasi</td>
+                  <td class="text-warning">Belum Terverifikasi</td>
                 </tr>
                 <tr>
                   <td>3</td>
                   <td>Pengajuan Dokumen Tugas Akhir</td>
                   <td>Ada kesalahan pada dokumen Anda, silahkan hubungi Admin</td>
-                  <td style="color: red;">Gagal Terverifikasi</td>
+                  <td class="text-danger">Gagal Terverifikasi</td>
                 </tr>
               </tbody>
             </table>
-            <div class="pagination">
-              <a href="#">Previous</a>
-              <a href="#">1</a>
-              <a href="#">2</a>
-              <a href="#">3</a>
-              <a href="#">Next</a>
-            </div>
+            <nav>
+              <ul class="pagination justify-content-center">
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+              </ul>
+            </nav>
           </div>
         </div>
 
       </div>
       <!-- Main Content End -->
       <!-- Footer Start -->
-      <div class="footer h-25">
+      <div class="footer h-25 center">
         <?php include '../layer/footer.php'; ?>
       </div>
       <!-- Footer End -->
