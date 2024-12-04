@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Bebas Tanggungan</title>
-  <link rel="shortcut icon" type="image/png" href="../../../assets/images/logos/logo-jti.png" />
+  <link rel="shortcut icon" type="image/png" href="../../../assets/images/logos/icon-logo.png" />
   <link rel="stylesheet" href="../../../assets/css/styles.min.css" />
 
 </head>
@@ -170,7 +170,7 @@
       <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
           <a href="./dashboard.php" class="text-nowrap logo-img">
-            <img src="../../../assets/images/logos/jti-polinema.png" width="180" alt="" />
+            <img src="../../../assets/images/logos/sibeta2.png" width="180" alt="" />
           </a>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
             <i class="ti ti-x fs-8"></i>
@@ -236,7 +236,7 @@
     <!--  Sidebar End -->
 
     <!--  Main Wrapper (Content Section) -->
-    <div class="body-wrapper">
+    <div class="body-wrapper min-vh-100 d-flex flex-column justify-content-between">
       <!--  Header Start -->
       <header class="app-header">
         <nav class="navbar navbar-expand-lg navbar-light">
@@ -264,13 +264,9 @@
                 </a>
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
                   <div class="message-body">
-                    <a href="./data-mahasiswa.php" class="d-flex align-items-center gap-2 dropdown-item">
-                      <i class="ti ti-school fs-6"></i>
-                      <p class="mb-0 fs-3">Data Mahasiswa</p>
-                    </a>
                     <a href="./profile.php" class="d-flex align-items-center gap-2 dropdown-item">
                       <i class="ti ti-user fs-6"></i>
-                      <p class="mb-0 fs-3">My Profile</p>
+                      <p class="mb-0 fs-3">Profil</p>
                     </a>                  
                     <button id="logoutButton" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</button>
                   </div>
@@ -337,10 +333,21 @@
               </div>
               <button>Next</button>
           </div>
+          <div class="py-6 px-6 text-center">
+          <p class="mb-0 fs-4" style="text-align: bottom;">
+            <span class="pe-1 text-primary text-decoration-underline">Bebas Tanggungan TA</span>
+            | Design and Developed by
+            <span class="pe-1 text-primary text-decoration-underline">Kelompok 4</span>
+          </p>
+        </div>
       </div>
       <!--  Main Content End -->
     </div>
+    
   </div>
+      <!-- Footer -->
+        
+      <!-- Footer End-->
 
   <script src="../../../assets/libs/jquery/dist/jquery.min.js"></script>
   <script src="../../../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
