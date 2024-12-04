@@ -16,13 +16,17 @@
         padding: 0;
         background-color: #ffff;
     }
+    aside.left-sidebar {
+      border: none; /* Menghapus border */
+      box-shadow: none; /* Menghapus bayangan */
+      outline: none; /* Menghapus outline */
+    }
     .app-header {
         position: fixed;
         top: 0;
         width: 100%;
         z-index: 1000; 
         background-color: #fff; 
-        border-bottom: 1px solid #ddd;
     }
     .body-wrapper {
         margin-top: 80px; /* Berikan margin untuk menyesuaikan posisi konten di bawah header */
@@ -245,7 +249,7 @@
                   aria-expanded="false">
                   <img src="../../../assets/images/profile/Farrel-Caesarian.jpg" alt="" width="35" height="35"
                     class="rounded-circle" />
-                    <p class="mb-0 ms-2 fs-5">Muhammad Farrel Caesarian</p>
+                    <p class="mb-0 ms-2 fs-5">2341720053 / Muhammad Farrel Caesarian</p>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
                   <div class="message-body">
@@ -255,9 +259,9 @@
                     </a>
                     <a href="./profile.php" class="d-flex align-items-center gap-2 dropdown-item">
                       <i class="ti ti-user fs-6"></i>
-                      <p class="mb-0 fs-3">My Profile</p>
+                      <p class="mb-0 fs-3">Profil</p>
                     </a>                  
-                    <button id="logoutButton" class="btn btn-outline-primary mx-3 mt-2 d-block">Logout</button>
+                    <button id="logoutButton" class="btn btn-outline-primary mx-3 mt-2 d-block">Keluar</button>
                   </div>
                 </div>
               </li>
