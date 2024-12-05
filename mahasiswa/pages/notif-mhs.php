@@ -42,8 +42,7 @@
                 <tbody>
                   <!-- Repeat for each row -->
                   <tr>
-                    <td><b>Mahasiswa Mengajukan Verifikasi</b><br>Gunawan Tos Santos - 234198765 telah mengajukan verifikasi
-                      Tugas Akhir</td>
+                    <td><b>Dokumen telah terverifikasi</b><br>Pengajuan Tugas Akhir telah diverifikasi</td>
                     <td style="text-align: right;">09:45 23/11/2024</td>
                     <td style="text-align: center;">
                       <button class="btn-action btn-delete btn btn-danger btn-sm">
@@ -52,8 +51,8 @@
                     </td>
                   </tr>
                   <tr>
-                    <td><b>Mahasiswa Mengajukan Verifikasi</b><br>Gunawan Tos Santos - 234198765 telah mengajukan verifikasi
-                      Tugas Akhir</td>
+                    <td><b>Dokumen gagal terverifikasi</b><br>Pengajuan Dokumen Jurusan gagal diverifikasi, Silahkan
+                      hubungi admin</td>
                     <td style="text-align: right;">09:45 23/11/2024</td>
                     <td style="text-align: center;">
                       <button class="btn-action btn-delete btn btn-danger btn-sm">
@@ -62,8 +61,7 @@
                     </td>
                   </tr>
                   <tr>
-                    <td><b>Mahasiswa Mengajukan Verifikasi</b><br>Gunawan Tos Santos - 234198765 telah mengajukan verifikasi
-                      Tugas Akhir</td>
+                    <td><b>Dokumen telah terverifikasi</b><br>Pengajuan Tugas Akhir telah diverifikasi</td>
                     <td style="text-align: right;">09:45 23/11/2024</td>
                     <td style="text-align: center;">
                       <button class="btn-action btn-delete btn btn-danger btn-sm">
@@ -71,6 +69,17 @@
                       </button>
                     </td>
                   </tr>
+                  <tr>
+                    <td><b>Dokumen gagal terverifikasi</b><br>Pengajuan Dokumen Jurusan gagal diverifikasi, Silahkan
+                      hubungi admin</td>
+                    <td style="text-align: right;">09:45 23/11/2024</td>
+                    <td style="text-align: center;">
+                      <button class="btn-action btn-delete btn btn-danger btn-sm">
+                        <i class="ti ti-trash"></i>
+                      </button>
+                    </td>
+                  </tr>
+
                   <!-- Additional rows if needed -->
                 </tbody>
               </table>
