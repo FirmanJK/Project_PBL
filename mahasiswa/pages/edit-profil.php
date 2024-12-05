@@ -74,13 +74,13 @@
             <button type="reset" class="btn btn-danger ms-3">Batal</button>
           </div>
         </form>
-
+        <!-- Footer -->
+        <div class="footer h-25 center">
+          <?php include '../layer/footer.php'; ?>
+        </div>
+        <!-- Footer End-->
       </div>
 
-
-      <!-- Footer -->
-
-      <!-- Footer End-->
       <script src="../../assets/libs/jquery/dist/jquery.min.js"></script>
       <script src="../../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
       <script src="../../assets/js/sidebarmenu.js"></script>
