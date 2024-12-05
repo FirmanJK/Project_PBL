@@ -1,17 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
 
 <!-- <body> -->
   <aside class="left-sidebar absolute">
     <!-- Sidebar scroll-->
     <div>
       <div class="brand-logo d-flex align-items-center justify-content-center">
-        <a href="./index.html" class="text-nowrap">
+        <a href="./index-default.php" class="text-nowrap">
           <img src="../../assets/images/logos/sibeta2.png" width="150" alt="" />
         </a>
         <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
@@ -108,5 +101,3 @@
   <script src="../assets/js/app.min.js"></script>
   <script src="../assets/libs/simplebar/dist/simplebar.js"></script>
 <!-- </body> -->
-
-</html>
