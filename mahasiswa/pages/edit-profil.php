@@ -25,7 +25,7 @@
 
       <div
         style="width: 100%; max-width: 800px; background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); margin: auto; margin-top: 100px; ">
-        <h2 style="font-size: 20px; margin-bottom: 20px; color: #333; text-align: center;">Profil</h2>
+        <h2 style="font-size: 20px; margin-bottom: 20px; color: #333; text-align: center;">Edit Profil</h2>
         <div style="text-align: center;">
           <img src="../../assets/images/profile/user-1.jpg " alt="" width="100" height="100"
             style="border-radius: 50%; margin-bottom:20px;">
@@ -68,11 +68,10 @@
             <label for="address" class="form-label">Alamat</label>
             <input type="text" id="address" class="form-control" value="Jalan Kenangan No. 123, Jakarta, Indonesia">
           </div>
-
-
-          <!-- Tombol Edit -->
-          <div class="text-center">
-            <a href="edit-profil.php" class="btn btn-primary">Edit Profil</a>
+          <!-- Tombol -->
+          <div class="d-flex justify-content-end">
+            <button type="submit" class="btn btn-success">Simpan</button>
+            <button type="reset" class="btn btn-danger ms-3">Batal</button>
           </div>
         </form>
 

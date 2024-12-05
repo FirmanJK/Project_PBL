@@ -46,7 +46,8 @@
                 <div class="mb-3">
                   <label for="fileSimfoni" class="form-label">Bukti Mengisi Data Alumni (SIMFONI POLINEMA)</label><br>
                   <label for="fileSKLA" class="form-sub-label" style="margin-bottom: 2%;">(format .png/.jpg/.jpeg,
-                    maksimal 2MB)</label>
+                    maksimal 2MB)</label><br>
+                  <label for="fileSKLA" class="form-sub-label" style="margin-bottom: 2%;"><a href="https://forms.gle/eFJhCcG55PzZa8Qv5">https://forms.gle/eFJhCcG55PzZa8Qv5</a></label>
                   <input type="file" class="form-control" id="fileSimfoni"> 
                 </div> 
                 <br>

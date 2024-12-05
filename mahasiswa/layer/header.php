@@ -18,7 +18,7 @@
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link nav-icon-hover" href="../pages/notifikasi.php">
+          <a class="nav-link nav-icon-hover" href="../pages/notif.php">
             <i class="ti ti-bell-ringing"></i>
             <div class="notification bg-primary rounded-circle"></div>
           </a>
