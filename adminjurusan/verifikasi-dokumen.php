@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bebas Tanggungan</title>
+  <title>SIBETA</title>
   <link rel="shortcut icon" type="image/png" href="../../../assets/images/logos/icon-logo.png" />
   <link rel="stylesheet" href="../../../assets/css/styles.min.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -24,20 +24,34 @@
           <div class="d-flex justify-content-between align-items-center mb-4" style="margin-top: 80px;">
             <h2 class="title mb-0">Verifikasi Dokumen</h2>
             <form class="form-inline d-flex">
-              <input class="form-control mr-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-primary" type="submit">Search</button>
+              <input class="form-control mr-2" type="search" placeholder="Cari" aria-label="Search">
+              <button class="btn btn-outline-primary" type="submit">Cari</button>
             </form>
           </div>
           <div class="card">
             <div class="card-body">
-              <div class="list-group">
+            <div class="list-group">
                 <div class="list-group-item d-flex justify-content-between align-items-center">
                   <span>
                     <strong>Gunawan Tos Santos</strong> - 234198765 mengajukan verifikasi Tugas Akhir
                   </span>
                   <div>
-                    <button class="btn  btn-sm" style="background-color: #33C644">✔</button>
-                    <button class="btn  btn-sm" style="background-color: #FF4141;">✖</button>
+                    <button class="btn btn-outline-primary btn-sm">✔</button>
+                    <style>
+                      .btn-outline-primary.btn-sm:hover {
+                        background-color: #5bc0de;
+                        color: white;
+                        border-color: #5bc0de;
+                      }
+                    </style>
+                    <button class="btn btn-outline-danger btn-sm">✖</button>
+                    <style>
+                      .btn-outline-danger.btn-sm:hover {
+                        background-color: #FF4141;
+                        color: white;
+                        border-color: #FF4141;
+                      }
+                    </style>
                   </div>
                 </div>
                 <div class="list-group-item d-flex justify-content-between align-items-center">
@@ -45,8 +59,22 @@
                     <strong>Putri Amelia Novita</strong> - 234198795 mengajukan verifikasi Tugas Akhir
                   </span>
                   <div>
-                    <button class="btn  btn-sm" style="background-color: #33C644">✔</button>
-                    <button class="btn  btn-sm" style="background-color: #FF4141;">✖</button>
+                  <button class="btn btn-outline-primary btn-sm">✔</button>
+                    <style>
+                      .btn-outline-primary.btn-sm:hover {
+                        background-color: #5bc0de;
+                        color: white;
+                        border-color: #5bc0de;
+                      }
+                    </style>
+                    <button class="btn btn-outline-danger btn-sm">✖</button>
+                    <style>
+                      .btn-outline-danger.btn-sm:hover {
+                        background-color: #FF4141;
+                        color: white;
+                        border-color: #FF4141;
+                      }
+                    </style>
                   </div>
                 </div>
                 <div class="list-group-item d-flex justify-content-between align-items-center">
@@ -54,8 +82,22 @@
                     <strong>Farrel Caesarian</strong> - 234298795 mengajukan verifikasi Tugas Akhir
                   </span>
                   <div>
-                    <button class="btn  btn-sm" style="background-color: #33C644">✔</button>
-                    <button class="btn  btn-sm" style="background-color: #FF4141;">✖</button>
+                  <button class="btn btn-outline-primary btn-sm">✔</button>
+                    <style>
+                      .btn-outline-primary.btn-sm:hover {
+                        background-color: #5bc0de;
+                        color: white;
+                        border-color: #5bc0de;
+                      }
+                    </style>
+                    <button class="btn btn-outline-danger btn-sm">✖</button>
+                    <style>
+                      .btn-outline-danger.btn-sm:hover {
+                        background-color: #FF4141;
+                        color: white;
+                        border-color: #FF4141;
+                      }
+                    </style>
                   </div>
                 </div>
                 <div class="list-group-item d-flex justify-content-between align-items-center">
@@ -63,8 +105,22 @@
                     <strong>Firmandika</strong> - 234191215 mengajukan verifikasi Tugas Akhir
                   </span>
                   <div>
-                    <button class="btn  btn-sm" style="background-color: #33C644">✔</button>
-                    <button class="btn  btn-sm" style="background-color: #FF4141;">✖</button>
+                  <button class="btn btn-outline-primary btn-sm">✔</button>
+                    <style>
+                      .btn-outline-primary.btn-sm:hover {
+                        background-color: #5bc0de;
+                        color: white;
+                        border-color: #5bc0de;
+                      }
+                    </style>
+                    <button class="btn btn-outline-danger btn-sm">✖</button>
+                    <style>
+                      .btn-outline-danger.btn-sm:hover {
+                        background-color: #FF4141;
+                        color: white;
+                        border-color: #FF4141;
+                      }
+                    </style>
                   </div>
                 </div>
                 <div class="list-group-item d-flex justify-content-between align-items-center">
@@ -72,8 +128,22 @@
                     <strong>Firmandika</strong> - 234191215 mengajukan verifikasi Tugas Akhir
                   </span>
                   <div>
-                    <button class="btn  btn-sm" style="background-color: #33C644">✔</button>
-                    <button class="btn  btn-sm" style="background-color: #FF4141;">✖</button>
+                  <button class="btn btn-outline-primary btn-sm">✔</button>
+                    <style>
+                      .btn-outline-primary.btn-sm:hover {
+                        background-color: #5bc0de;
+                        color: white;
+                        border-color: #5bc0de;
+                      }
+                    </style>
+                    <button class="btn btn-outline-danger btn-sm">✖</button>
+                    <style>
+                      .btn-outline-danger.btn-sm:hover {
+                        background-color: #FF4141;
+                        color: white;
+                        border-color: #FF4141;
+                      }
+                    </style>
                   </div>
                 </div>
                 <div class="list-group-item d-flex justify-content-between align-items-center">
@@ -81,21 +151,35 @@
                     <strong>Firmandika</strong> - 234191215 mengajukan verifikasi Tugas Akhir
                   </span>
                   <div>
-                    <button class="btn  btn-sm" style="background-color: #33C644">✔</button>
-                    <button class="btn  btn-sm" style="background-color: #FF4141;">✖</button>
+                  <button class="btn btn-outline-primary btn-sm">✔</button>
+                    <style>
+                      .btn-outline-primary.btn-sm:hover {
+                        background-color: #5bc0de;
+                        color: white;
+                        border-color: #5bc0de;
+                      }
+                    </style>
+                    <button class="btn btn-outline-danger btn-sm">✖</button>
+                    <style>
+                      .btn-outline-danger.btn-sm:hover {
+                        background-color: #FF4141;
+                        color: white;
+                        border-color: #FF4141;
+                      }
+                    </style>
                   </div>
                 </div>
               </div>
               <nav>
                 <ul class="pagination justify-content-end mt-3">
                   <li class="page-item disabled">
-                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Kembali</a>
                   </li>
                   <li class="page-item"><a class="page-link" href="#">1</a></li>
                   <li class="page-item"><a class="page-link" href="#">2</a></li>
                   <li class="page-item"><a class="page-link" href="#">3</a></li>
                   <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
+                    <a class="page-link" href="#">Selanjutnya</a>
                   </li>
                 </ul>
               </nav>
