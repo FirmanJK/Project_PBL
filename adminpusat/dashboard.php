@@ -4,9 +4,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>SIBETA</title>
+  <title>DASHBOARD</title>
   <link rel="shortcut icon" type="image/png" href="../../../assets/images/logos/Sibeta.png" />
   <link rel="stylesheet" href="../../../assets/css/styles.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
 
 <body>
@@ -17,9 +18,9 @@
     <aside class="left-sidebar">
       <!-- Sidebar scroll-->
       <div>
-        <div class="brand-logo d-flex align-items-center justify-content-between">
-          <a href="./dashboard.php" class="text-nowrap logo-img">
-            <img src="../../../assets/images/logos/Sibeta.png" width="180" alt="" />
+        <div class="brand-logo d-flex justify-content-center align-items-center">
+          <a href="./index.html" class="text-nowrap logo-img">
+            <img src="../../../assets/images/logos/Sibeta.png" width="180"  alt="" />
           </a>
           <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
             <i class="ti ti-x fs-8"></i>
@@ -30,26 +31,26 @@
           <ul id="sidebarnav">
             <li class="nav-small-cap">
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-              <span class="hide-menu">BERANDA</span>
+              <span class="hide-menu" style="font-size: 16px;">BERANDA</span>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="dashboard.php" aria-expanded="false">
                 <span>
                   <i class="ti ti-layout-dashboard"></i>
                 </span>
-                <span class="hide-menu">Dashboard</span>
+                <span class="hide-menu" style="font-size: 16px;">Dashboard</span>
               </a>
             </li>
             <li class="nav-small-cap">
               <i class="ti ti-dots nav-small-cap-icon fs-4"></i>
-              <span class="hide-menu">Manajemen Sistem</span>
+              <span class="hide-menu" style="font-size: 16px;">Manajemen Sistem</span>
             </li>
             <li class="sidebar-item">
               <a class="sidebar-link" href="./arsip-tugasAkhir.php" aria-expanded="false">
                 <span>
                   <i class="ti ti-archive"></i>
                 </span>
-                <span class="hide-menu">Arsip Tugas Akhir</span>
+                <span class="hide-menu" style="font-size: 16px;">Arsip Tugas Akhir</span>
               </a>
             </li>
             <li class="sidebar-item">
@@ -57,7 +58,7 @@
                 <span>
                   <i class="ti ti-archive"></i>
                 </span>
-                <span class="hide-menu">Arsip Pusat</span>
+                <span class="hide-menu" style="font-size: 16px;">Arsip Pusat</span>
               </a>
             </li>
             <li class="sidebar-item">
@@ -65,7 +66,7 @@
                 <span>
                   <i class="ti ti-checklist"></i>
                 </span>
-                <span class="hide-menu">Verifikasi Dokumen</span>
+                <span class="hide-menu" style="font-size: 16px;">Verifikasi Dokumen</span>
               </a>
             </li>
           </ul>
@@ -74,9 +75,13 @@
       </div>
       <!-- End Sidebar scroll-->
     </aside>
+    <div class="body-wrapper">
+        <!-- End Sidebar navigation -->
+      </div>
+      <!-- End Sidebar scroll-->
+    </aside>
     <!--  Sidebar End -->
-
-    <!--  Main Wrapper (Content Section) -->
+    <!--  Main wrapper -->
     <div class="body-wrapper">
       <!--  Header Start -->
       <header class="app-header">
@@ -88,20 +93,21 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link nav-icon-hover" href="./notifikasi.php">
-                <i class="ti ti-bell-ringing"></i>
-                <div class="notification bg-primary rounded-circle"></div>
-              </a>
-            </li>
+  <a class="nav-link nav-icon-hover" href="./notifikasi.php">
+    <i class="ti ti-bell-ringing" style="font-size: 30px;"></i>
+    <div class="notification bg-primary rounded-circle"></div>
+  </a>
+</li>
+
           </ul>
           <div class="navbar-collapse justify-content-end px-0" id="navbarNav">
             <ul class="navbar-nav flex-row ms-auto align-items-center justify-content-end">
               <li class="nav-item dropdown">
-                <a class="nav-link nav-icon-hover" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
+                <a class="nav-link" href="javascript:void(0)" id="drop2" data-bs-toggle="dropdown"
                   aria-expanded="false">
-                  <img src="../../../assets/images/profile/Firman.jpg" alt="" width="40" height="35"
+                  <img src="../../../assets/images/profile/Firman.jpg" alt="" width="40" height="40"
                     class="rounded-circle" />
-                    <p class="mb-0 ms-2 fs-5">1987656789 / Mochammad Firmandika Jati Kusuma</p>
+                    <p style="margin-top: 15px; margin-left: 10px;">1987656789 / Mochammad Firmandika Jati Kusuma</p>
                 </a>
                 <div class="dropdown-menu dropdown-menu-end dropdown-menu-animate-up" aria-labelledby="drop2">
                   <div class="message-body">
@@ -113,37 +119,49 @@
                   </div>
                 </div>
               </li>
+              <li class="nav-item">
+              </li>
             </ul>
           </div>
         </nav>
       </header>
-      
       <!--  Header End -->
-
-      <!--  Main Content Start -->
-      <div class="container">
-        < class="row">
-          <div class="col-lg-9 col-md-8 col-12 offset-lg-2 offset-md-2" style="margin-top: 120px;">
-            <div class="deskripsi">  
-              <h2>Selamat datang di Portal Bebas Tanggungan JTI Polinema</h2>
-              <p>Portal Bebas Tanggungan Jurusan Teknologi Informasi Politeknik Negeri Malang</p><hr>
-              <p>Digunakan sebagai portal repositori karya akhir berbentuk produk (seperti aplikasi) dan dokumen lengkap,
-                karya akhir ini nantinya dapat diterbitkan melalui layanan hosting dan repositori yang terhubung dengan
-                portal ini. Layanan ini hanya bisa diakses oleh satu mahasiswa per judul karya akhir, dengan akun yang
-                terdaftar atas nama penulis utama. Untuk mulai menggunakan layanan ini, silakan klik "Lanjut." </p>
-            </div>
-            <div class="py-6 px-6 text-center">
-                    <p class="mb-0 fs-4">
-                        <span class="pe-1 text-primary text-decoration-underline">Bebas Tanggungan TA</span>
-                        | Design and Developed by
-                        <span class="pe-1 text-primary text-decoration-underline">Kelompok 4</span>
+      <body>
+        <br><br>
+        <div class="container-fluid">
+          <!--  Row 1 -->
+          <div class="row">
+            <div class="col d-flex align-items-stretch">
+              <div class="card w-100" style="background-color: #ECF4FF;">
+                <div class="card-body p-4">
+                  <h5 class="card-title fw-semibold mb-4" style="font-size: 30px;">Selamat datang di Portal Sibeta</h5>
+                  <h6 class="card-subtitle mb-2 text-muted" style="font-size: 20px;">Portal Sistem Informasi Bebas Tanggungan Pusat</h6>
+                  <hr>
+                  <p class=" card-text" style="font-size: 20px;">Digunakan sebagai portal repositori karya akhir berbentuk produk (seperti
+                    aplikasi)
+                    dan dokumen lengkap, karya akhir ini nantinya dapat diterbitkan melalui layanan hosting dan repositori
+                    yang terhubung dengan portal ini. Layanan ini hanya bisa diakses oleh satu admin per judul karya
+                    akhir, dengan akun yang terdaftar atas nama penulis utama. Untuk mulai
+                    menggunakan layanan ini, silakan klik "Lanjut." </p>
+                  <a href="./arsip-tugasAkhir.php" class="btn btn-primary" style="font-size: 20px">Lanjut</a>
                 </div>
+              </div>
+            </div>
           </div>
+        </div>
+      </body>
+
+      <br><br><br><br><br><br><br><br><br>
+        <div class="py-6 px-6 text-center">
+          <p class="mb-0 fs-4" >
+            <span class="pe-1 text-primary text-decoration-underline">Bebas Tanggungan TA</span>
+            <span style="color: black;"> | Design and Developed by </span>
+            <span class="pe-1 text-primary text-decoration-underline">Kelompok 4 <br><br><br><br><br><br><br><br></span>
+          </p>
+        </div>
       </div>
-      <!--  Main Content End -->
     </div>
   </div>
-
   <script src="../../../assets/libs/jquery/dist/jquery.min.js"></script>
   <script src="../../../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script src="../../../assets/js/sidebarmenu.js"></script>
@@ -151,6 +169,26 @@
   <script src="../../../assets/libs/apexcharts/dist/apexcharts.min.js"></script>
   <script src="../../../assets/libs/simplebar/dist/simplebar.js"></script>
   <script src="../../../assets/js/dashboard.js"></script>
+  <script>
+    document.getElementById('logoutButton').addEventListener('click', function () {
+      // Tampilkan konfirmasi SweetAlert2
+      Swal.fire({
+        title: 'Yakin ingin logout?',
+        text: "Anda akan keluar dari sesi ini.",
+        icon: 'warning',
+        showCancelButton: true,
+        confirmButtonColor: '#3085d6',
+        cancelButtonColor: '#d33',
+        confirmButtonText: 'Ya, logout!',
+        cancelButtonText: 'Batal'
+      }).then((result) => {
+        if (result.isConfirmed) {
+          // Arahkan ke logout.php jika pengguna memilih "Ya"
+          window.location.href = '../../auth/logout.php';
+        }
+      });
+    });
+  </script>
 </body>
 
 </html>
