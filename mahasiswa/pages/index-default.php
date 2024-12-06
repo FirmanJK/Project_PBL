@@ -27,11 +27,10 @@
         <!--  Row 1 -->
         <div class="row">
           <div class="col d-flex align-items-stretch">
-            <div class="card w-100">
+            <div class="card w-100" style="background-color: #ECF4FF">
               <div class="card-body p-4">
-                <h5 class="card-title fw-semibold mb-4">Selamat datang di Portal Bebas Tanggungan JTI Polinema</h5>
-                <h6 class="card-subtitle mb-2 text-muted"">Portal Bebas Tanggungan Jurusan Teknologi Informasi Politeknik
-                  Negeri Malang</h6>
+                <h5 class="card-title fw-semibold mb-4">Selamat datang di Portal Sibeta</h5>
+                <h6 class="card-subtitle mb-2 text-muted"">Portal Sistem Informasi Bebas Tanggungan Mahasiswa</h6>
                 <hr>
                 <p class=" card-text">Digunakan sebagai portal repositori karya akhir berbentuk produk (seperti
                   aplikasi)
